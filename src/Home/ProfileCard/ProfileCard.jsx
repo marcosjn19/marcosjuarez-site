@@ -6,7 +6,7 @@ import rutaLink  from '../../assets/linkdn.svg'
 import rutaMail  from '../../assets/correo.svg'
 
 function ProfileCard() {
-  let whoami = {0:"Computer systems engineering student.", 1:"Robotics enthusiast", 2:"ICPC contestant", 3:"STEAM Advocate", 4:"Gamer", 5:"FIRST Alumni & Mentor"}
+  let whoami = {0:"Computer systems engineering student 💻", 1:"Robotics enthusiast 🤖", 2:"ICPC contestant 🖥️", 3:"STEAM Advocate 🗣️", 4:"Gamer 👾", 5:"FIRST Alumni & Mentor 🎓"}
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(false);
 
@@ -36,9 +36,9 @@ function ProfileCard() {
                 <h2 className={`myself ${fade ? 'fade' : ''}`}>{whoami[currentIndex]}</h2>
             </div>
             <div className='iconCont'>
-                <img src={rutaGit}></img>
-                <img src={rutaLink}></img>
-                <img src={rutaMail}></img>
+                <img src={rutaGit} onClick={()=>window.open("https://github.com/marcosjn19")} alt="GitHub"></img>
+                <img src={rutaLink} onClick={()=>window.open("https://www.linkedin.com/in/marcos-emmanuel-ju%C3%A1rez-navarro-51a3b9322/")} alt="Linkedin"></img>
+                <img src={rutaMail} onClick={()=>window.open("mailto:marcosjn719@gmail.com")} alt="Mail"></img>
             </div>
         </div>
       </div>

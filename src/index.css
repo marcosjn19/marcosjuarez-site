@@ -16,6 +16,12 @@
     --fontColor: #FFFFFF;
   }
 }
+
+body {
+  background-color: var(--bgColor);
+  color: var(--fontColor);
+}
+
 h1 { 
   margin: auto;
   width: fit-content;

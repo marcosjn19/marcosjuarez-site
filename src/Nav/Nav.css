@@ -2,7 +2,7 @@
     --bgColor    : #FFFFFF;
     --bgAltColor : #F3F3F3;
     --bgRealce   : #FFFFFF;
-    --mainColor : rgb(160, 107, 240);
+    --mainColor : #a06bf0;
     --mainAltColor  : rgb(59, 43, 85);
     --fontColor : #000000;
   }
@@ -29,8 +29,9 @@
 }
 
 .navMainContainer .logo {
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width:  auto;
+    margin-left: 1rem;
 }
   .navButtonsContainer {
     display      : flex;

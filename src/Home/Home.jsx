@@ -43,7 +43,7 @@ function Home(){
             </div>
         </div>  
 
-        <div className='activities-main-container'>
+        <div className='activities-main-container' id="activities-main-container">
         <h1>Latest activities...</h1>
         <ActivitiesCarousel/>
         </div>

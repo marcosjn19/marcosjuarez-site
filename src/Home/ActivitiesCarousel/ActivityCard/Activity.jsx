@@ -22,7 +22,8 @@ export default function Activity( {titulo, preview, date, imgSrc, link}){
             <Text size="lg" c="dimmed">
             {preview}
             </Text>
-            <Button>More details...</Button>
+            
+            {link && ( <Button onClick={() => window.open(link)}>More details...</Button>)}
             </div>
         </Group>
         </Card>

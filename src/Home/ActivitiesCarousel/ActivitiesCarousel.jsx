@@ -22,8 +22,8 @@ function ActivitiesCarousel() {
       onMouseEnter={autoplay.current.stop}
       onMouseLeave={autoplay.current.reset}
       >
-        <CarouselSlide><Activity titulo={"Data analysis program"}preview={"Just made a data analysis program using python"} imgSrc={imgAnalisis} date="09/08/2024"></Activity></CarouselSlide>
-        <CarouselSlide><Activity titulo={"We made it to the nationals!"}preview={"Just qualified to Innobotica nationals contest!"} imgSrc={imgInnobotica} date="08/10/2024"></Activity></CarouselSlide>
+        <CarouselSlide><Activity titulo={"Data analysis program"}preview={"Just made a data analysis program using python"} imgSrc={imgAnalisis} date="09/08/2024" link={"https://github.com/marcosjn19/analisisCalcio"}></Activity></CarouselSlide>
+        <CarouselSlide><Activity titulo={"We made it to the nationals!"}preview={"Just qualified to Innobotica nationals contest!"} imgSrc={imgInnobotica} date="08/10/2024" link={"https://www.facebook.com/share/p/uMkiem5WP9vmKZ2z/"}></Activity></CarouselSlide>
         <CarouselSlide><Activity titulo={"3rd Regional Place at 'Copa Comunidades OmegaUP'"}preview={"Got 3rd place at a programming contest"} imgSrc={imgOmega} date="15/06/2024"></Activity></CarouselSlide>
       </Carousel>
     </div>
