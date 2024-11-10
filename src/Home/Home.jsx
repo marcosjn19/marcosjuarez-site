@@ -5,6 +5,7 @@ import ActivitiesCarousel from './ActivitiesCarousel/ActivitiesCarousel';
 import imgAb1 from '../assets/innoboticaImg1.jpg'
 import imgAb2 from '../assets/myselfv2.jpg'
 import Skillset from './Skillset/Skillset';
+import Experience from './ExpTimeLine/Experience.jsx'
 
 function Home(){
     return(
@@ -43,6 +44,10 @@ function Home(){
             </div>
         </div>  
 
+        <div className='exp alt2'>
+            <h1>Work History</h1>
+            <Experience/>
+        </div>
         <div className='activities-main-container' id="activities-main-container">
         <h1>Latest activities...</h1>
         <ActivitiesCarousel/>

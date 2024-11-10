@@ -1,0 +1,41 @@
+:root {
+    --bgColor    : #FFFFFF;
+    --bgAltColor : #F3F3F3;
+    --bgRealce   : #FFFFFF;
+    --mainColor : #a06bf0;
+    --mainAltColor  : rgb(59, 43, 85);
+    --fontColor : #000000;
+  }
+  
+@media ( prefers-color-scheme: dark ) {
+    :root {
+      --bgColor: #191B19;
+      --bgRealce: #000000;
+      --bgAltColor: rgba(44,44,44);
+      --bgReColor: rgba(56,56,56);
+      --fontColor: #FFFFFF;
+    }
+}
+
+body {
+    background-color: var(--bgColor);
+    color: var(--fontColor);
+}
+
+.timeline-container {
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 90%;
+}
+
+@media ( min-width: 769px ) {
+.timeline-container {
+    width: 50%;
+}
+}
+
+.job-title {
+    color: var(--fontColor);
+    font-size: 1.2rem;
+}
