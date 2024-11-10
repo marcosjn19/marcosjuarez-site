@@ -1,0 +1,71 @@
+:root {
+    --bgColor    : #FFFFFF;
+    --bgAltColor : #F3F3F3;
+    --bgRealce   : #FFFFFF;
+    --mainColor : rgb(160, 107, 240);
+    --mainAltColor  : rgb(59, 43, 85);
+    --fontColor : #000000;
+  }
+  
+@media ( prefers-color-scheme: dark ) {
+    :root {
+      --bgColor: #191B19;
+      --bgRealce: #000000;
+      --bgAltColor: rgba(44,44,44);
+      --bgReColor: rgba(56,56,56);
+      --fontColor: #FFFFFF;
+    }
+}
+
+
+.navMainContainer {
+    z-index: 1;
+    display          : flex;
+    background-color : var( --bgAltColor );
+    position         : fixed;
+    top              : 0;
+    left: 0;
+    width: 100%;
+}
+
+.navMainContainer .logo {
+    height: 2rem;
+    width: 2rem;
+}
+  .navButtonsContainer {
+    display      : flex;
+    margin-left  : auto;
+  }
+  
+  .navButtonsContainer a {
+    margin       : auto;
+    margin-left  : 1rem;  
+    font-size    : 1rem;
+    cursor       : pointer;
+    text-align   : center;
+    padding-right: 2rem;
+    outline: none;
+    text-decoration: none;
+    color: var(--fontColor);
+  }
+  
+  .navButtonsContainer a:link {
+    color: var(--fontColor);
+  }
+  
+  .navButtonsContainer a:hover {
+    font-weight : 700;
+    font-size   : 1.1rem;
+    transition  : ease-in-out all 200ms;
+  }
+  
+  .navButtonsContainer a:visited {
+    color: var(--fontColor);
+  }
+  
+  .logo {
+    width       : 4.5rem;
+    margin-top  : 0.5rem;
+    margin-left : 0.5rem;
+  }
+  

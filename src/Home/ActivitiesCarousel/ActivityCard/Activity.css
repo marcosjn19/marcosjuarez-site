@@ -1,0 +1,48 @@
+:root {
+    --bgColor    : #FFFFFF;
+    --bgAltColor : #F3F3F3;
+    --bgRealce   : #FFFFFF;
+    --mainColor : rgb(160, 107, 240);
+    --mainAltColor  : rgb(59, 43, 85);
+    --fontColor : #000000;
+  }
+  
+@media ( prefers-color-scheme: dark ) {
+    :root {
+      --bgColor: #191B19;
+      --bgRealce: #000000;
+      --bgAltColor: rgba(44,44,44);
+      --bgReColor: rgba(56,56,56);
+      --fontColor: #FFFFFF;
+    }
+}
+
+.cardActivity {
+    background-color: var(--bgAltColor);
+    color: var(--fontColor);  
+}
+
+.infoActivity {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.infoActivity-title {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+
+.infoActivity-description {
+  display: flex;
+  flex-direction: column;
+  height: 12rem;
+}
+
+.infoActivity-description Button {
+  margin: auto;
+  margin-top: auto;
+  width: 70%;
+}

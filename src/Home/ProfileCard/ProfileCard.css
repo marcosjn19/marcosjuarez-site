@@ -1,0 +1,117 @@
+:root {
+    --bgColor    : #FFFFFF;
+    --bgAltColor : #F3F3F3;
+    --bgRealce   : #FFFFFF;
+    --mainColor : rgb(160, 107, 240);
+    --mainAltColor  : rgb(59, 43, 85);
+    --fontColor : #000000;
+  }
+  
+@media ( prefers-color-scheme: dark ) {
+    :root {
+      --bgColor: #191B19;
+      --bgRealce: #000000;
+      --bgAltColor: rgba(44,44,44);
+      --bgReColor: rgba(56,56,56);
+      --fontColor: #FFFFFF;
+    }
+}
+h1 { 
+    margin: auto;
+    width: fit-content;
+}
+
+h2 {
+    margin: auto;
+    text-align: center;
+}
+
+.cardContainer {
+    width: 50vw;
+    height: auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-box-shadow: 9px 10px 28px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 10px 28px 0px rgba(0,0,0,0.75);
+    box-shadow: 9px 10px 28px 0px rgba(0,0,0,0.75);
+    border-radius: 2rem;
+    background-color: var(--bgAltColor);
+    margin: auto;
+    margin-top: 5rem;
+}
+
+@media ( max-width: 768px ) {
+    .cardContainer {
+        width: 80%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+.imgCont {
+    margin: auto;
+}
+
+.imgCont img {
+    width: 15rem;
+    border-radius: 10rem;
+}
+
+.infoCont {
+    margin: auto;
+    padding: 1rem;
+}
+
+.infoCont h1 {
+    margin-bottom: 1rem;
+}
+
+.infoCont h2 {
+    margin-bottom: 0.3rem;
+    transition: all ease-in-out 300ms;
+}
+
+.myself {
+    color: var(--mainColor);
+}
+
+@media ( max-width: 760px ) {
+    .infoCont {
+        margin-top: 1rem;
+    }
+}
+
+.iconCont {
+    margin: auto;
+    margin-top:  1rem;
+}
+
+.iconCont img{
+    width: 2.5rem;
+    margin-right: 1rem;
+    color: var(--fontColor);
+    border-radius: 0.8rem;
+}
+
+.iconCont img:hover {
+    transition: ease-in-out 200ms;
+    filter: invert(00%);
+    box-shadow: inset 0px 0px 2rem var(--mainColor);
+    cursor: pointer;
+    filter: contrast(200%);
+}
+
+@media ( prefers-color-scheme : dark ) {
+    .iconCont img {
+        filter: invert(100%);
+    }
+}
+
+.myself{
+    opacity: 1;
+}
+
+.fade {
+    opacity: 0;
+  }

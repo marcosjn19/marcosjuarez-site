@@ -1,0 +1,39 @@
+:root {
+    --bgColor    : #FFFFFF;
+    --bgAltColor : #F3F3F3;
+    --bgRealce   : #FFFFFF;
+    --mainColor : rgb(160, 107, 240);
+    --mainAltColor  : rgb(59, 43, 85);
+    --fontColor : #000000;
+  }
+  
+@media ( prefers-color-scheme: dark ) {
+    :root {
+      --bgColor: #191B19;
+      --bgRealce: #000000;
+      --bgAltColor: rgba(44,44,44);
+      --bgReColor: rgba(56,56,56);
+      --fontColor: #FFFFFF;
+    }
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: min-content;
+    margin: auto;
+    justify-content: center;
+}
+
+.skill-container img {
+    width: 3rem;
+    margin-bottom: 0.1rem;
+    margin: auto;
+}
+
+.skill-container p {
+    font-weight: 600;
+    margin-top: 0.1rem;
+    filter: contrast(0.2);
+}

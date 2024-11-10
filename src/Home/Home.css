@@ -1,0 +1,60 @@
+:root {
+    --bgColor    : #FFFFFF;
+    --bgAltColor : #F3F3F3;
+    --bgRealce   : #FFFFFF;
+    --mainColor : rgb(160, 107, 240);
+    --mainAltColor  : rgb(59, 43, 85);
+    --fontColor : #000000;
+  }
+  
+@media ( prefers-color-scheme: dark ) {
+    :root {
+      --bgColor: #191B19;
+      --bgRealce: #000000;
+      --bgAltColor: rgba(44,44,44);
+      --bgReColor: rgba(56,56,56);
+      --fontColor: #FFFFFF;
+    }
+}
+
+.infoH {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--bgAltColor);
+  display: grid;
+}
+
+.alt2 {
+  background-color: var(--bgColor);
+}
+@media ( min-width: 769px ) {
+  .infoH {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+}
+
+.infoH img {
+  width: 80%;
+  margin:auto;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contInfoH {
+  margin: auto;
+}
+h1 {
+  text-align: center;
+  margin: auto;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.activities-main-container {
+  margin-top: 2rem;
+}

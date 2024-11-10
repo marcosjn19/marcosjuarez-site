@@ -1,0 +1,30 @@
+:root {
+    --bgColor    : #FFFFFF;
+    --bgAltColor : #F3F3F3;
+    --bgRealce   : #FFFFFF;
+    --mainColor : rgb(160, 107, 240);
+    --mainAltColor  : rgb(59, 43, 85);
+    --fontColor : #000000;
+  }
+  
+@media ( prefers-color-scheme: dark ) {
+    :root {
+      --bgColor: #191B19;
+      --bgRealce: #000000;
+      --bgAltColor: rgba(44,44,44);
+      --bgReColor: rgba(56,56,56);
+      --fontColor: #FFFFFF;
+    }
+}
+.carrusel{
+    width: 100%;
+    margin:auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px){ 
+   .carrusel {
+    width: 80%;
+   }
+}
